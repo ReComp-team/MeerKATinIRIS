@@ -52,7 +52,7 @@ python processMeerKAT.py -R -C myconfig.txt
 
 'cal_scripts' folder will have all the scripts to run the whole MeerKAT pipeline.  The 'bookkeeping.py' and 'get_fields.py' are helper scripts which will not be part of MeerKAT pipeline.
 
-'run-meerkat.sh' is the bash script that runs the meerkat pipeline and the sequence to run the MeerKAT follows the workflow order visulaized in the figure ![MeerKAT pipeline](/images/processMeerKAT.png).
+'run-meerkat.sh' is the bash script that runs the meerkat pipeline and the sequence to run the MeerKAT follows the workflow order visulaized in the figure ![MeerKAT pipeline](processMeerKAT.png).
 
 ```
 bash run-meerkat.sh
