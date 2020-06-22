@@ -44,10 +44,10 @@ MeerKATinIRIS/
 ```
 ## *myconfig.txt* - Configuration file
 Each script will take a common configuration file called "myconfig.txt" in this example, which contains 
-crosscal values including number of base lines, referance antenna, bad antennas and bad freqeuncy ranges. Based on the input .MS data, this can be automatically generated using the following command.
+crosscal values including number of base lines, referance antenna, bad antennas and bad freqeuncy ranges. Based on the input .MS data, this can be automatically generated using the following command. Sample configuration file (myconfig.txt) for sample data is already given, so you can skip this step.
 
 ```
-python processMeerKAT.py -R -C myconfig.txt
+python processMeerKAT.py -B -C myconfig.txt -M mydata.ms
 ```
 
 ## *config_parser.py* 
