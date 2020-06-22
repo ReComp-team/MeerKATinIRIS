@@ -14,34 +14,34 @@ MeerKATinIRIS/
 │
 │
 └─── processMeerKAT/
-│       myconfig.txt
-│       config_parser.py
-│       processMeerKAT.py
-│       run-meerkat.sh
-│       job-meerkat.py
-│       
-│
-└───data/
-│   └───data.ms
-│
-└-──cal_scripts/
-        __init__.py
-        bookkeeping.py
-        calc_refant.py
-        fastplot.py
-        flag_round_1.py
-        flag_round_2.py
-        get_fields.py
-        partition.py
-        plot_solutions.py
-        quick_tclean.py
-        setjy.py
-        split.py
-        validate_input.py
-        xx_yy_apply.py
-        xx_yy_solve.py
-        xy_yx_apply.py
-        xy_yx_solve.py
+        │       myconfig.txt
+        │       config_parser.py
+        │       processMeerKAT.py
+        │       run-meerkat.sh
+        │       job-meerkat.py
+        │       
+        │
+        └───data/
+        │   └───data.ms
+        │
+        └-──cal_scripts/
+                __init__.py
+                bookkeeping.py
+                calc_refant.py
+                fastplot.py
+                flag_round_1.py
+                flag_round_2.py
+                get_fields.py
+                partition.py
+                plot_solutions.py
+                quick_tclean.py
+                setjy.py
+                split.py
+                validate_input.py
+                xx_yy_apply.py
+                xx_yy_solve.py
+                xy_yx_apply.py
+                xy_yx_solve.py
 ```
 ## myconfig.txt
 Each script will take a common configuration file called "myconfig.txt" in this example, which contains 
