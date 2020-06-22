@@ -11,7 +11,7 @@ Let's see the contents in the MeerKATinIRIS repo.
 ```
 MeerKATinIRIS/
 └─── README.md
-│
+│    setup.sh
 │
 └─── processMeerKAT/
         │       config_parser.py 
