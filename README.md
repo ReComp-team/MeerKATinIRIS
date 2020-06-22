@@ -42,7 +42,7 @@ MeerKATinIRIS/
                 xy_yx_apply.py
                 xy_yx_solve.py
 ```
-## myconfig.txt
+## *myconfig.txt* Configuration file
 Each script will take a common configuration file called "myconfig.txt" in this example, which contains 
 crosscal values including number of base lines, referance antenna, bad antennas and bad freqeuncy ranges. Based on the input .MS data, this can be automatically generated using the following command.
 
@@ -50,7 +50,7 @@ crosscal values including number of base lines, referance antenna, bad antennas 
 python processMeerKAT.py -R -C myconfig.txt
 ```
 
-## **config_parser.py** Configuration file
+## *config_parser.py* 
 'config_parser.py' is the helper script to validate and parse the arguments as well to parse and overwrite the configuration.
 
 ## **data** Data folder
