@@ -42,7 +42,7 @@ MeerKATinIRIS/
                 xy_yx_apply.py
                 xy_yx_solve.py
 ```
-## *myconfig.txt* Configuration file
+## *myconfig.txt* - Configuration file
 Each script will take a common configuration file called "myconfig.txt" in this example, which contains 
 crosscal values including number of base lines, referance antenna, bad antennas and bad freqeuncy ranges. Based on the input .MS data, this can be automatically generated using the following command.
 
@@ -53,7 +53,7 @@ python processMeerKAT.py -R -C myconfig.txt
 ## *config_parser.py* 
 'config_parser.py' is the helper script to validate and parse the arguments as well to parse and overwrite the configuration.
 
-## **data** Data folder
+## **data** - Data folder
 'data' folder contains the sample data which helps you to understand how MeerKAT pipeline works. You should replace it with your .ms data on which you want to run the pipeline on. Sample data '1491550051.ms' can be fetched from DiRAC LFN (LFN:/skatelescope.eu/user/p/priyaa.thavasimani/MeerKAT/1491550051.tar.gz).
 
 ```
@@ -98,7 +98,6 @@ priyaat@lofar7 /raid/scratch/priyaa/MeerKAT-IRIS/processMeerKAT/plots > ls
 0252-712_freq_amp.png   0408-65_freq_amp.png   1934-638_freq_amp.png   bpass_freq_amp.png    bpass_real_imag.png      DEEP_2_off_real_imag.png  phasecal_time_amp.png
 0252-712_real_imag.png  0408-65_real_imag.png  1934-638_real_imag.png  bpass_freq_phase.png  DEEP_2_off_freq_amp.png  phasecal_real_imag.png    phasecal_time_phase.png
 ```
-
 ###### How long does the MeerKAT pipeline run for sample data i.e. '1491550051.ms'?
 It will take 2 and 1/2 hours to run the whole pipeline for the sample data i.e: '1491550051.ms' both locally and on IRIS.
 
