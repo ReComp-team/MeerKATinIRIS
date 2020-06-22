@@ -80,14 +80,9 @@ IPython 5.1.0 -- An enhanced Interactive Python.
 CASA 5.4.1-31   -- Common Astronomy Software Applications
 
 --> CrashReporter initialized.
-Traceback (most recent call last):
-  File "/opt/casa-release-5.4.1-31.el7/lib/python2.7/init_welcome.py", line 30, in <module>
-    execfile(__candidates[0])
-  File "processMeerKAT/cal_scripts/get_fields.py", line 10, in <module>
-    import processMeerKAT
-ImportError: No module named processMeerKAT
 2020-06-22 19:39:26,290 INFO: Config "myconfig.txt" generated.
 ```
+move the generated myconfig.txt to processMeerKAT folder.
 
 ## *config_parser.py* 
 'config_parser.py' is the helper script to validate and parse the arguments as well to parse and overwrite the configuration.
