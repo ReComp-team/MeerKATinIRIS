@@ -14,11 +14,11 @@ MeerKATinIRIS/
 │
 │
 └─── processMeerKAT/
+        │       config_parser.py 
+        │       job-meerkat.py
         │       myconfig.txt
-        │       config_parser.py
         │       processMeerKAT.py
         │       run-meerkat.sh
-        │       job-meerkat.py
         │       
         │
         └───data/
@@ -28,7 +28,6 @@ MeerKATinIRIS/
                 __init__.py
                 bookkeeping.py
                 calc_refant.py
-                fastplot.py
                 flag_round_1.py
                 flag_round_2.py
                 get_fields.py
