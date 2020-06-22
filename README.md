@@ -39,25 +39,36 @@ MeerKATinIRIS/
         xy_yx_apply.py
         xy_yx_solve.py
 ```
-
+## myconfig.txt
 Each script will take a common configuration file called "myconfig.txt" in this example, which contains 
 crosscal values including number of base lines, referance antenna, bad antennas and bad freqeuncy ranges. Based on the input .MS data, this can be automatically generated using the following command.
 
 ```
 python processMeerKAT.py -R -C myconfig.txt
 ```
+
+## **config_parser.py** Configuration file
 'config_parser.py' is the helper script to validate and parse the arguments as well to parse and overwrite the configuration.
 
-'data' folder contains the sample data which helps you to understand how MeerKAT pipeline works. You should replace it with your .ms data on which you want to run the pipeline on.
+## **data** Data folder
+'data' folder contains the sample data which helps you to understand how MeerKAT pipeline works. You should replace it with your .ms data on which you want to run the pipeline on. Sample data '1491550051.ms' can be fetched from DiRAC LFN (LFN:/skatelescope.eu/user/p/priyaa.thavasimani/MeerKAT/1491550051.tar.gz).
 
+```
+dirac-dms-get-file LFN:/skatelescope.eu/user/p/priyaa.thavasimani/MeerKAT/1491550051.tar.gz
+```
+
+## **cal_scripts** - Main scripts to run MeerKAT
 'cal_scripts' folder will have all the scripts to run the whole MeerKAT pipeline.  The 'bookkeeping.py' and 'get_fields.py' are helper scripts which will not be part of MeerKAT pipeline.
 
+## **run-meerkat.sh** - Bash script for singularity call **cal_script** scripts.
 'run-meerkat.sh' is the bash script that runs the meerkat pipeline and the sequence to run the MeerKAT follows the workflow order visulaized in the figure ![MeerKAT pipeline](processMeerKAT.png).
+
+###### To run locally with the data '1491550051ms', you can simply run the following command.
 
 ```
 bash run-meerkat.sh
 ```
-
+###### Sample Outputs Generated 
 After successfully running the pipeline, you should get .tt0, psf, residual and model images as below.
 
 ```
@@ -85,7 +96,10 @@ priyaat@lofar7 /raid/scratch/priyaa/MeerKAT-IRIS/processMeerKAT/plots > ls
 0252-712_real_imag.png  0408-65_real_imag.png  1934-638_real_imag.png  bpass_freq_phase.png  DEEP_2_off_freq_amp.png  phasecal_real_imag.png    phasecal_time_phase.png
 ```
 
+###### How long does the MeerKAT pipeline run for sample data i.e. '1491550051.ms'?
 It will take 2 and 1/2 hours to run the whole pipeline for the sample data i.e: '1491550051.ms' both locally and on IRIS.
+
+###### To run on IRIS:
 
 To submit the 'run-meerkat.sh' job to IRIS, 'job-meerkat.py' is used and this can be run by using following command. If there is any permission denied errors shown, use ```chmod u+x job-meerkat.py``` to give permission.
 
