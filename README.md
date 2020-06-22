@@ -68,10 +68,29 @@ The below shows how to create myconfig.txt based on the specified data and conta
 ```
 priyaat@lofar7 /raid/scratch/priyaa/MeerKATinIRIS > python2 processMeerKAT/processMeerKAT.py -B -C myconfig.txt -l -M processMeerKAT/data/1491550051.ms/ -c /raid/scratch/priyaa/casameer-5.4.1.xvfb.simg
 2020-06-22 19:39:21,284 INFO: Extracting field IDs from measurement set "processMeerKAT/data/1491550051.ms/" using CASA.
-
+=========================================
+The start-up time of CASA may vary
+depending on whether the shared 2020-06-22 19:59:16,252 INFO: Extracting field IDs from measurement set "processMeerKAT/data/1491550051.ms/" using CASA.
 =========================================
 The start-up time of CASA may vary
 depending on whether the shared libraries
+are cached or not.
+=========================================
+IPython 5.1.0 -- An enhanced Interactive Python.
+CASA 5.4.1-31   -- Common Astronomy Software Applications
+--> CrashReporter initialized.
+2020-06-22 19:59:21,028 WARNING: The number of threads (8 node(s) x 4 task(s) = 32) is not ideal compared to the number of scans (12) for "processMeerKAT/data/1491550051.ms/".
+2020-06-22 19:59:21,028 WARNING: Config file has been updated to use 2 node(s) and 4 task(s) per node.
+2020-06-22 19:59:21,028 INFO: For the best results, update your config file so that nodes x tasks per node = 7.
+2020-06-22 19:59:21,038 INFO: Multiple fields found with intent "CALIBRATE_FLUX" in dataset "processMeerKAT/data/1491550051.ms/" - [0 1].
+2020-06-22 19:59:21,039 WARNING: Only using field "0" for "fluxfield", which has the most scans (1).
+2020-06-22 19:59:21,039 WARNING: Putting extra fields with intent "CALIBRATE_FLUX" in "targetfields" - [1]
+2020-06-22 19:59:21,039 INFO: Multiple fields found with intent "CALIBRATE_BANDPASS" in dataset "processMeerKAT/data/1491550051.ms/" - [0 1].
+2020-06-22 19:59:21,039 WARNING: Only using field "0" for "bpassfield", which has the most scans (1).
+2020-06-22 19:59:21,040 INFO: Multiple fields found with intent "CALIBRATE_PHASE" in dataset "processMeerKAT/data/1491550051.ms/" - [1 2].
+2020-06-22 19:59:21,040 WARNING: Only using field "2" for "phasecalfield", which has the most scans (5).
+2020-06-22 19:59:21,041 INFO: [fields] section written to "processMeerKAT/myconfig.txt". Edit this section to change field IDs (comma-seperated string for multiple IDs).
+2020-06-22 19:59:21,329 INFO: Config "processMeerKAT/myconfig.txt" generated.libraries
 are cached or not.
 =========================================
 
