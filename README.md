@@ -10,12 +10,16 @@ git clone https://github.com/priyaa-t/MeerKATinIRIS.git
 Let's see the contents in the MeerKATinIRIS repo.
 ```
 MeerKATinIRIS/
-│   myconfig.txt
-│   config_parser.py
-│   processMeerKAT.py
-│   run-meerkat.sh
-│   job-meerkat.py
-│   README.md
+└─── README.md
+│
+│
+└─── processMeerKAT/
+│       myconfig.txt
+│       config_parser.py
+│       processMeerKAT.py
+│       run-meerkat.sh
+│       job-meerkat.py
+│       
 │
 └───data/
 │   └───data.ms
