@@ -63,10 +63,12 @@ mv casameer-5.4.1.xvfb.simg <move the container to processMeerKAT folder>
 Each script will take a common configuration file called "myconfig.txt" in this example, which contains 
 crosscal values including number of base lines, referance antenna, bad antennas and bad freqeuncy ranges. Based on the input .MS data, this can be automatically generated using the following command. Sample configuration file (myconfig.txt) for sample data is already given, so you can skip this step.
 
-The below shows how to create myconfig.txt based on the specified data and container.
+The below command shows how to create myconfig.txt based on the specified data and container. You need source the 'setup.sh' file before creating "myconfig.txt" file using ```source setup.sh```
+
+Now create the "myconfig.txt" by specifying the data directory and container location as below:
 
 ```
-priyaat@lofar7 /raid/scratch/priyaa/MeerKATinIRIS > python2 processMeerKAT/processMeerKAT.py -B -C myconfig.txt -l -M processMeerKAT/data/1491550051.ms/ -c /raid/scratch/priyaa/casameer-5.4.1.xvfb.simg
+priyaat@lofar7 /raid/scratch/priyaa/MeerKATinIRIS > python2 processMeerKAT/processMeerKAT.py -B -C processMeerKAT/myconfig.txt -l -M processMeerKAT/data/1491550051.ms/ -c /raid/scratch/priyaa/casameer-5.4.1.xvfb.simg
 2020-06-22 19:39:21,284 INFO: Extracting field IDs from measurement set "processMeerKAT/data/1491550051.ms/" using CASA.
 =========================================
 The start-up time of CASA may vary
