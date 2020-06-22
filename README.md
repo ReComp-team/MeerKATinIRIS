@@ -5,5 +5,5 @@ If you want to know more about MeerKAT pipeline itself, please look at https://i
 
 Git clone the repository using the below command
 ```
-git clone 
+git clone https://github.com/priyaa-t/MeerKATinIRIS.git
 ```
