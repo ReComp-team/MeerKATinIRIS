@@ -61,7 +61,7 @@ mv casameer-5.4.1.xvfb.simg <move the container to processMeerKAT folder>
 
 ## Step 3: Create *myconfig.txt* - Configuration file (This can be skipped for the sample data "1491550051.ms")
 Each script will take a common configuration file called "myconfig.txt" in this example, which contains 
-crosscal values including number of base lines, referance antenna, bad antennas and bad freqeuncy ranges. The "myconfig.txt" file contains "SLURM" fileds which will be ignored as we are not running our pipeline on SLURM. Based on the input .MS data, this can be automatically generated using the following command. Sample configuration file (myconfig.txt) for sample data is already given, so you can skip this step.
+crosscal values including number of base lines, referance antenna, bad antennas and bad freqeuncy ranges. The "myconfig.txt" file contains "slurm" fileds which will be ignored as we are not running our pipeline on SLURM. Based on the input .MS data, this can be automatically generated using the following command. Sample configuration file (myconfig.txt) for sample data is already given, so you can skip this step.
 
 The below command shows how to create myconfig.txt based on the specified data and container. You need to source the 'setup.sh' file before creating "myconfig.txt" file using ```source setup.sh```. This will add the correct paths to your $PATH and $PYTHONPATH in order to correctly use the pipeline.
 
