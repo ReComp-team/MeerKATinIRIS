@@ -44,7 +44,7 @@ MeerKATinIRIS/
 ```
 
 ## Step 2: Get sample data and singularity containers from LFN:
-To run locally, you need data and singularity containers from LFN. This step is not needed if you running direcly on LFN.
+To run locally, you need data and singularity containers from LFN. This step is not needed if you running direcly on IRIS.
 
 ###### Step 2.1: To get **data** - Data folder
 'data' folder contains the sample data which helps you to understand how MeerKAT pipeline works. You should replace it with your .ms data on which you want to run the pipeline on. Sample data '1491550051.ms' can be fetched from DiRAC LFN (LFN:/skatelescope.eu/user/p/priyaa.thavasimani/MeerKAT/1491550051.tar.gz).
