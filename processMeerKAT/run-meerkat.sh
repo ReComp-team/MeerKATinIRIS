@@ -113,16 +113,5 @@ singularity exec -B $PWD -B cal_scripts/ -B data/1491550051.ms/ casameer-5.4.1.x
 time 
 #singularity exec -B $PWD -B cal_scripts/ -B data/1491550051.ms/ /cvmfs/sw.skatelescope.eu/images/meerkat.simg casa --nogui --log2term -c cal_scripts/plot_solutions.py --config myconfig.txt
 
-echo "renaming prmon file"
-mv prmon.txt prmon_validate_partition_$1.txt
-
-tar -czvf outputMMS_$1.tar.gz *mms*
-
-cp myconfig.txt myconfig_$1.txt
-
-time 
-tar -czvf images_$1.tar.gz images
-time 
-tar -czvf plots_$1.tar.gz plots
 echo "Listing all contents"
 ls -lah
