@@ -50,7 +50,7 @@ To run locally, you need data and singularity containers from LFN. This step is 
 'data' folder contains the sample data which helps you to understand how MeerKAT pipeline works. You should replace it with your .ms data on which you want to run the pipeline on. Sample data '1491550051.ms' can be fetched from DiRAC LFN (LFN:/skatelescope.eu/user/p/priyaa.thavasimani/MeerKAT/1491550051.tar.gz).
 
 ```
-dirac-dms-get-file LFN:/skatelescope.eu/user/p/priyaa.thavasimani/MeerKAT/1491550051.tar.gz
+dirac-dms-get-file LFN:/skatelescope.eu/user/p/priyaa.thavasimani/MeerKAT_DataSets/1491550051.ms.tar.gz
 tar -xzvf 1491550051.tar.gz <extract to your data folder>
 ```
 ###### Step 2.2: To get casameer singularity container:
