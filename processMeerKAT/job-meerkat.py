@@ -20,21 +20,21 @@ jdl = ''
 
 # Something descriptive for the name! Like 'RunMeerKAT'.
 jdl += 'JobName = "RunMeerKAT";\n'
-jdl +=  'Parameters = "LFN:/skatelescope.eu/user/p/priyaa.thavasimani/MeerKAT/1491550051.tar.gz";\n'
+#jdl +=  'Parameters = "LFN:/skatelescope.eu/user/p/priyaa.thavasimani/MeerKAT/1491550051.tar.gz";\n'
 jdl += 'Tags = {"skatelescope.eu.hmem","8Processors"};\n'
 jdl += 'Platform = "EL7";\n'
 
 jdl += 'Site = "LCG.UKI-NORTHGRID-MAN-HEP.uk";\n'
 #jdl += 'SmpGranularity = 6;\n'
 #jdl += 'CPUNumber = 6;\n'
-#jdl += 'OutputSE = "SARA-MATRIX-disk";\n'
+jdl += 'OutputSE = "UKI-NORTHGRID-MAN-HEP-disk";\n'
 #if len(sys.argv) > 1:
 # timeSamples = sys.argv[1]
 #else:
 # timeSamples = ''
 
 # The script you want to run. 
-jdl += 'Executable = "run-meerkat.sh";\n'
+jdl += 'Executable = "run-meerkat-on-iris.sh";\n'
 
 # tarJob.sh will be run with these command line arguments
 # %n is a counter increasing by one for each job in the list
@@ -45,10 +45,10 @@ jdl += 'Arguments = "%j %n %s";\n'
 
 # Send the script you want to run (in this directory where you run man-job-submit
 # or give the full path to it)
-jdl += 'InputSandbox = {"run-meerkat.sh","LFN:/skatelescope.eu/user/p/priyaa.thavasimani/MeerKAT/cal_scripts.tar.gz","myconfig.txt","config_parser.py","processMeerKAT.py","LFN:/skatelescope.eu/user/p/priyaa.thavasimani/MeerKAT/casameer-5.4.1.xvfb.simg","prmon_1.0.1_x86_64-static-gnu72-opt.tar.gz","LFN:/skatelescope.eu/user/p/priyaa.thavasimani/MeerKAT/1491550051.tar.gz"};\n'
+jdl += 'InputSandbox = {"run-meerkat-on-iris.sh","LFN:/skatelescope.eu/user/p/priyaa.thavasimani/MeerKAT/cal_scripts.tar.gz","myconfig.txt","config_parser.py","processMeerKAT.py","LFN:/skatelescope.eu/user/p/priyaa.thavasimani/MeerKAT/casameer-5.4.1.xvfb.simg","prmon_1.0.1_x86_64-static-gnu72-opt.tar.gz","LFN:/skatelescope.eu/user/p/priyaa.thavasimani/MeerKAT_DataSets/1491550051.ms.tar.gz"};\n'
 # Tell DIRAC where to get your big input data files from
 # %s is the parameter taken from the list given in Parameters = { ... }
-jdl += 'InputData = {"LFN:/skatelescope.eu/user/p/priyaa.thavasimani/MeerKAT/1491550051.tar.gz"};\n'
+jdl += 'InputData = {"LFN:/skatelescope.eu/user/p/priyaa.thavasimani/MeerKAT_DataSets/1491550051.ms.tar.gz"};\n'
                       
 # Direct stdout and stderr to files
 jdl += 'StdOutput = "StdOut";\n'
