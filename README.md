@@ -120,7 +120,7 @@ move the generated myconfig.txt to processMeerKAT folder.
 bash run-meerkat.sh
 ```
 ###### Sample Outputs Generated 
-After successfully running the pipeline, you should get .tt0, psf, residual and model images as below.
+If the quick_tclean.py is run successfully, you should get .tt0, psf, residual and model images as below.
 
 ```
 priyaat@lofar7 /raid/scratch/priyaa/MeerKAT-IRIS/processMeerKAT > cd images
@@ -140,7 +140,7 @@ priyaat@lofar7 /raid/scratch/priyaa/MeerKAT-IRIS/processMeerKAT/images > ls
 1491550051_0252-712.im.psf.tt2       1491550051_0408-65.im.mask            1491550051_1934-638.im.alpha         1491550051_1934-638.im.residual.tt0  1491550051_DEEP_2_off.im.model.tt0
 ```
 
-And plots are generated under plots directory and it should have following contents:
+If the plot_solutions.py is run successfully, plots are generated under plots directory and it should have following contents. If the plots are not generated, the common cause for the problem is that $DISPLAY variable is not set. To test if the display variable is not set, use ```echo $DISPLAY```. If it shows "DISPLAY: Undefined variable." error, then you have no X11 forwarding and so 'plotms' will not work. To enable X11 forwarding, use "ssh -Y username@host", so that plotms will work as expected and create the "plots" folder as below.
 ```
 priyaat@lofar7 /raid/scratch/priyaa/MeerKAT-IRIS/processMeerKAT/plots > ls
 0252-712_freq_amp.png   0408-65_freq_amp.png   1934-638_freq_amp.png   bpass_freq_amp.png    bpass_real_imag.png      DEEP_2_off_real_imag.png  phasecal_time_amp.png
