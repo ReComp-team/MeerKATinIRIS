@@ -19,7 +19,7 @@ MeerKATinIRIS/
         │       myconfig.txt
         │       processMeerKAT.py
         │       run-meerkat.sh
-        │       
+        │       run-meerkat-on-iris.sh
         │
         └───data/
         │   └───data.ms
