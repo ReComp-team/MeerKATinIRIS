@@ -151,7 +151,7 @@ It will take 2 and 1/2 hours to run the whole pipeline for the sample data i.e: 
 
 ## To run on IRIS:
 
-To submit the 'run-meerkat.sh' job to IRIS, 'job-meerkat.py' is used and this can be run by using following command. If there is any permission denied errors shown, use ```chmod u+x job-meerkat.py``` to give permission.
+To submit the 'run-meerkat-on-iris.sh' job to IRIS, 'job-meerkat.py' is used and this can be run by using following command. If there is any permission denied errors shown, use ```chmod u+x job-meerkat.py``` to give permission.
 
 ```
 ./job-meerkat.py
