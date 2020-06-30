@@ -5,7 +5,9 @@
 #
 # This script uses DIRAC parametric jobs:
 #  https://github.com/DIRACGrid/DIRAC/wiki/JobManagementAdvanced
-
+"""
+@author: Priyaa Thavasimani
+"""
 import sys
 import time
 
