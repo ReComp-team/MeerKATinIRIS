@@ -47,7 +47,7 @@ jdl += 'Arguments = "%j %n %s";\n'
 
 # Send the script you want to run (in this directory where you run man-job-submit
 # or give the full path to it)
-jdl += 'InputSandbox = {"run-meerkat-on-iris.sh","LFN:/skatelescope.eu/user/p/priyaa.thavasimani/MeerKAT/cal_scripts.tar.gz","myconfig.txt","config_parser.py","processMeerKAT.py","LFN:/skatelescope.eu/user/p/priyaa.thavasimani/MeerKAT/casameer-5.4.1.xvfb.simg","prmon_1.0.1_x86_64-static-gnu72-opt.tar.gz","LFN:/skatelescope.eu/user/p/priyaa.thavasimani/MeerKAT_DataSets/1491550051.ms.tar.gz"};\n'
+jdl += 'InputSandbox = {"run-meerkat-on-iris.sh","LFN:/skatelescope.eu/user/p/priyaa.thavasimani/MeerKAT/cal_scripts.tar.gz","myconfig.txt","config_parser.py","processMeerKAT.py","LFN:/skatelescope.eu/user/p/priyaa.thavasimani/MeerKAT/casameer-5.4.1.xvfb.simg","LFN:/skatelescope.eu/user/p/priyaa.thavasimani/MeerKAT/prmon_1.0.1_x86_64-static-gnu72-opt.tar.gz","LFN:/skatelescope.eu/user/p/priyaa.thavasimani/MeerKAT_DataSets/1491550051.ms.tar.gz"};\n'
 # Tell DIRAC where to get your big input data files from
 # %s is the parameter taken from the list given in Parameters = { ... }
 jdl += 'InputData = {"LFN:/skatelescope.eu/user/p/priyaa.thavasimani/MeerKAT_DataSets/1491550051.ms.tar.gz"};\n'
