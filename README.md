@@ -51,7 +51,7 @@ To run locally, you need data and singularity containers from LFN. This step is 
 
 ```
 dirac-dms-get-file LFN:/skatelescope.eu/user/p/priyaa.thavasimani/MeerKAT_DataSets/1491550051.ms.tar.gz
-tar -xzvf 1491550051.tar.gz <extract to your data folder>
+tar -xzvf 1491550051.ms.tar.gz <extract to your data folder>
 ```
 ###### Step 2.2: To get casameer singularity container:
 ```
